@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+      @font-face {
+          font-family: 'Poppins';
+          src: url('Poppins-regular');
+      }
+        body {
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        div {
+            width: 100%; 
+        }
+
+        .div1 {
+            background: #DDD;
+        }
+
+        .div2 {
+            background: #AAA;
+        }
+
+        .mam{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .cam{
+            background: white;
+            width: 50%;
+            border-radius: 20px;
+            box-shadow: 0 1px 10px #595959;
+        }
+
+        .cam h1{
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            font-weight: 300;
+            font-family: sans-serif;
+            padding: 10px 0;
+            padding-top: 20px;
+        }
+
+        .cam form{
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        form .text{
+            position: relative;
+            border-bottom: 2px solid #AAA;
+            margin: 30px 0;
+        }
+
+        .text input{
+            height: 20px;
+            font-size: 16px;
+            font-family: sans-serif;
+            border: none;
+            outline: none;
+            width: 100%;
+
+        }
+
+        .text label{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: #adadaa;
+            font-size: 16px;
+            transform: translateY(-50%);
+            }
+
+        .sub{
+            display: flex;
+            justify-content: center;
+        }
+
+        .sub input{
+            position: relative;
+            align-items: center;
+            margin: 20px 0;
+            padding: 6px 20px;
+            border-radius: 10px;
+            background-color: #adadaa;
+            font-family: sans-serif;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+    </div>
+    <div class="div2">
+         <div class="mam">
+             <div class="cam">
+                 <form action="manam">
+                     <h1>Login</h1>
+                     <div class="text">
+                         <input type="email">
+                         <label>Usename</label>
+                     </div>
+                     <div class="text">
+                         <input type="password">
+                         <label>Password</label>
+                     </div>
+                     <div class="sub">
+                         <input type="submit" value="Login">
+                     </div>
+                 </form>
+             </div>
+         </div>
+    </div>
+</body>
+
+</html>
